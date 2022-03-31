@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class DecisionMaker {
+
+	public static void main(String[] args) {
+		
+		Scanner scnr = new Scanner(System.in);
+		System.out.println("Enter a number between 1 and 100.");
+		int number = scnr.nextInt();
+		if (number % 2 != 0 && number <= 59) { 
+			System.out.println(number + " and odd.");
+		}
+		else if (number % 2 != 0 && number >= 60 && number <= 100) {
+			System.out.println(number + " and over 60.");
+		}
+	}
+
+}
